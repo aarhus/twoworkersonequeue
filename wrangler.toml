@@ -1,0 +1,22 @@
+name = "twoqueues-producer"
+main = "./src/index.ts"
+compatibility_date = "2023-04-08"
+
+
+
+
+
+[[queues.producers]]
+  queue = "my-queue"
+  binding = "MY_QUEUE"
+
+
+
+[miniflare.mounts]
+twoqueues-consumer = "./consumer/"
+
+[build]
+command = "npm run build"
+[build.upload]
+format = "modules"
+
