@@ -6,7 +6,7 @@ This is two workers which are bound to a queue and that can be tested from withi
 
 Clone the repository
 
-    cd consumer && npm install
+    (cd consumer && npm install)
     npm install
 
     npm run dev
